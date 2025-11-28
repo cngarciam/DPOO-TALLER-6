@@ -10,22 +10,16 @@ import javax.swing.JPanel;
 @SuppressWarnings("serial")
 public class PanelBotonesAgregar extends JPanel implements ActionListener
 {
-    /**
-     * El comando utilizado para el botón que sirve para crear un nuevo restaurante
-     */
+   
     private static final String CREAR = "nuevo";
 
-    /**
-     * El comando utilizado para el botón que sirve para cerrar la ventana sin crear un restaurante
-     */
+ 
     private static final String CERRAR = "ver";
 
     private JButton butNuevo;
     private JButton butCerrar;
 
-    /**
-     * La ventana principal de la aplicación
-     */
+   
     private VentanaAgregarRestaurante ventanaPrincipal;
 
     public PanelBotonesAgregar( VentanaAgregarRestaurante ventanaPrincipal )
@@ -34,11 +28,17 @@ public class PanelBotonesAgregar extends JPanel implements ActionListener
 
         setLayout( new FlowLayout( ) );
 
-        // Agrega el botón para crear el restaurante
-        // TODO completar
+   
+        butNuevo = new JButton( "Crear restaurante" );
+        butNuevo.setActionCommand( CREAR );
+        butNuevo.addActionListener( this );
+        add( butNuevo );
 
-        // Agrga el boton para cerrar la ventana
-        // TODO completar
+ 
+        butCerrar = new JButton( "Cerrar" );
+        butCerrar.setActionCommand( CERRAR );
+        butCerrar.addActionListener( this );
+        add( butCerrar );
     }
 
     @Override

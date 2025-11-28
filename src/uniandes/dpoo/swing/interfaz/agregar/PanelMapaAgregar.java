@@ -14,19 +14,13 @@ import javax.swing.border.LineBorder;
 @SuppressWarnings("serial")
 public class PanelMapaAgregar extends JPanel implements MouseListener
 {
-    /**
-     * La etiqueta donde se muestra el mapa y donde se debe marcar la ubicación del nuevo restaurante
-     */
+
     private JLabel labMapa;
 
-    /**
-     * La coordenada X del nuevo restaurante
-     */
+
     private int x;
 
-    /**
-     * La coordenada Y del nuevo restaurante
-     */
+
     private int y;
 
     public PanelMapaAgregar( )
@@ -40,10 +34,7 @@ public class PanelMapaAgregar extends JPanel implements MouseListener
         this.y = 0;
     }
 
-    /**
-     * Retorna las coordenadas del restaurante
-     * @return
-     */
+
     public int[] getCoordenadas( )
     {
         return new int[]{ x, y };
@@ -54,7 +45,6 @@ public class PanelMapaAgregar extends JPanel implements MouseListener
     {
         super.paint( g );
 
-        // Pinta un círculo rojo en la posición designada para el restaurante
         Graphics2D g2d = ( Graphics2D )g;
         g2d.setColor( Color.red );
         g2d.fillOval( x - 3, y - 3, 7, 7 );
