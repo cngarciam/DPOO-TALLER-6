@@ -34,7 +34,6 @@ public class PanelBotonesAgregar extends JPanel implements ActionListener
         butNuevo.addActionListener( this );
         add( butNuevo );
 
- 
         butCerrar = new JButton( "Cerrar" );
         butCerrar.setActionCommand( CERRAR );
         butCerrar.addActionListener( this );
