@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
+//final
 @SuppressWarnings("serial")
 public class PanelBotonesAgregar extends JPanel implements ActionListener
 {
